@@ -1,0 +1,85 @@
+/* Ganti isi file ini sepenuhnya */
+
+.main {
+  width: 90%;
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+.grouper {
+  /* Tidak perlu style khusus */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+/* === GAYA UNTUK FORM PENCARIAN === */
+.searchContainer {
+  margin-bottom: 40px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+}
+
+.searchInput:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2); /* Efek glow saat fokus */
+}
+
+/* === GAYA UNTUK DAFTAR HASIL === */
+.ulGroupStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Jarak antar kartu sitasi */
+}
+
+.listItem {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.listItem:last-child {
+  border-bottom: none;
+}
+
+.noResults {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 40px 0;
+  font-size: 1.1rem;
+}
+
+.noResults strong {
+  color: var(--text-primary);
+}
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .searchInput {
+    padding: 14px;
+  }
+}

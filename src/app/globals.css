@@ -1,0 +1,43 @@
+/* File: app/globals.css (BARU) */
+
+/* 1. Definisikan Palet Warna Dark Mode */
+:root {
+  --background-dark: #0D1117; /* Latar belakang utama (sangat gelap) */
+  --background-secondary: #161B22; /* Latar belakang untuk input/button */
+  --text-primary: #E6EDF3;       /* Warna teks utama (putih keabu-abuan) */
+  --text-secondary: #8B949E;    /* Warna teks sekunder (abu-abu) */
+  --border-color: #30363D;       /* Warna untuk garis pemisah dan border */
+  --accent-color: #58A6FF;       /* Warna untuk link atau aksen (biru) */
+}
+
+/* 2. Terapkan Tema dan Tipografi Dasar */
+body {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Atur gaya dasar untuk semua elemen teks */
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+  margin: 0;
+  padding: 0;
+  color: inherit; /* Mewarisi warna dari parent */
+  line-height: 1.6; /* Jarak antar baris agar mudah dibaca */
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 4. Hapus gaya list default */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
